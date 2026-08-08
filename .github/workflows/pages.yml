@@ -1,4 +1,4 @@
-name: Deploy CommonSense Network homepage
+name: Deploy Code Spark Network homepage
 
 on:
   push:
