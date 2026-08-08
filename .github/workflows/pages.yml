@@ -1,4 +1,4 @@
-name: Deploy Niu.io homepage
+name: Deploy CommonSense Network homepage
 
 on:
   push:

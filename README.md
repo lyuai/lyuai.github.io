@@ -1,5 +1,5 @@
-# Niu.io homepage
+# CommonSense Network homepage
 
-The static homepage for [niuio.github.io](https://niuio.github.io).
+The static homepage for [csn.ai](https://csn.ai).
 
-Niu.io focuses on embodied intelligence: perception, human–robot interaction, motion, manipulation, and imitation learning.
+CommonSense Network focuses on embodied intelligence: perception, human–robot interaction, motion, manipulation, and imitation learning.
