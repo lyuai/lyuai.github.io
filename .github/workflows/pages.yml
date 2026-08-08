@@ -1,4 +1,4 @@
-name: Deploy CSN.ai homepage
+name: Deploy LYU.ai homepage
 
 on:
   push:
