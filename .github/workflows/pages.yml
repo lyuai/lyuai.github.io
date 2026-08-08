@@ -1,4 +1,4 @@
-name: Deploy Code Spark Network homepage
+name: Deploy CSN.ai homepage
 
 on:
   push:
