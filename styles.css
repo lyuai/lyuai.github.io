@@ -130,9 +130,6 @@ body {
     'Inter',
     -apple-system,
     BlinkMacSystemFont,
-    'PingFang SC',
-    'Hiragino Sans GB',
-    'Noto Sans SC',
     'Segoe UI',
     sans-serif;
   font-size: 16px;
@@ -141,10 +138,6 @@ body {
   transition:
     background-color 0.35s ease,
     color 0.35s ease;
-}
-
-html[data-lang='zh'] body {
-  line-height: 1.78;
 }
 
 a {
@@ -165,7 +158,7 @@ button {
   margin-inline: auto;
 }
 
-/* Serif & CJK Display Emphasis */
+/* Serif Display Emphasis */
 .serif-italic {
   font-family: 'Instrument Serif', Georgia, 'Times New Roman', serif;
   font-style: italic;
@@ -177,15 +170,6 @@ button {
   background-clip: text;
   color: transparent;
   padding-right: 0.04em;
-}
-
-html[data-lang='zh'] .serif-italic {
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 1em;
-  letter-spacing: -0.015em;
-  padding-right: 0;
 }
 
 /* ==========================================================================
@@ -411,33 +395,6 @@ html[data-theme='light'] .ambient-aurora {
   gap: 10px;
 }
 
-.lang-switch {
-  display: inline-flex;
-  align-items: center;
-  padding: 2px;
-  border-radius: 999px;
-  background: var(--pill-bg);
-  border: 1px solid var(--pill-border);
-}
-
-.lang-btn {
-  padding: 4px 9px;
-  border-radius: 999px;
-  font-family: 'JetBrains Mono', ui-monospace, monospace;
-  font-size: 0.7rem;
-  font-weight: 500;
-  color: var(--fg-muted);
-  transition:
-    background-color 0.2s ease,
-    color 0.2s ease;
-}
-
-.lang-btn.is-active {
-  background: var(--bg-elevated);
-  color: var(--fg);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-}
-
 .icon-btn {
   width: 34px;
   height: 34px;
@@ -556,23 +513,12 @@ html[data-theme='light'] .icon-sun {
   letter-spacing: -0.042em;
 }
 
-html[data-lang='zh'] .hero-title {
-  font-size: clamp(2.25rem, 4.4vw, 3.7rem);
-  font-weight: 600;
-  line-height: 1.22;
-  letter-spacing: -0.02em;
-}
-
 .hero-lead {
   margin: 0 0 30px;
   max-width: 680px;
   font-size: clamp(1.02rem, 1.35vw, 1.16rem);
   line-height: 1.68;
   color: var(--fg-secondary);
-}
-
-html[data-lang='zh'] .hero-lead {
-  line-height: 1.82;
 }
 
 .hero-cta-row {
@@ -829,23 +775,12 @@ html[data-lang='zh'] .hero-lead {
   text-transform: uppercase;
 }
 
-html[data-lang='zh'] .section-caption {
-  letter-spacing: 0.04em;
-}
-
 .section-title {
   margin: 0 0 22px;
   font-size: clamp(2.1rem, 3.8vw, 3.35rem);
   font-weight: 560;
   line-height: 1.08;
   letter-spacing: -0.038em;
-}
-
-html[data-lang='zh'] .section-title {
-  font-size: clamp(1.85rem, 3.2vw, 2.75rem);
-  font-weight: 600;
-  line-height: 1.26;
-  letter-spacing: -0.018em;
 }
 
 .section-header-wide {
@@ -1383,12 +1318,6 @@ html[data-lang='zh'] .section-title {
   font-weight: 560;
   line-height: 1.1;
   letter-spacing: -0.036em;
-}
-
-html[data-lang='zh'] .closing-title {
-  font-size: clamp(1.65rem, 2.9vw, 2.45rem);
-  line-height: 1.28;
-  letter-spacing: -0.015em;
 }
 
 .closing-body {

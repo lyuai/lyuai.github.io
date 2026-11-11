@@ -8,7 +8,7 @@
       name="description"
       content="LYU.ai is an independent AI software company compiling multimodal perception into deterministic, native, human-editable craft."
     />
-    <meta name="theme-color" content="#07090e" id="meta-theme-color" />
+    <meta name="theme-color" content="#060911" id="meta-theme-color" />
 
     <!-- OpenGraph / Social -->
     <meta property="og:type" content="website" />
@@ -43,25 +43,20 @@
       (function () {
         try {
           var savedTheme = localStorage.getItem('lyu-theme');
-          if (savedTheme === 'light' || savedTheme === 'dark') {
-            document.documentElement.setAttribute('data-theme', savedTheme);
-            var meta = document.getElementById('meta-theme-color');
-            if (meta) meta.setAttribute('content', savedTheme === 'light' ? '#f5f7fb' : '#07090e');
-          }
-          var params = new URLSearchParams(window.location.search);
-          var urlLang = params.get('lang');
-          var savedLang = urlLang || localStorage.getItem('lyu-lang');
-          if (savedLang === 'zh' || savedLang === 'en') {
-            document.documentElement.setAttribute('lang', savedLang === 'zh' ? 'zh-CN' : 'en');
-            document.documentElement.setAttribute('data-lang', savedLang);
-          } else {
-            document.documentElement.setAttribute('data-lang', 'en');
-          }
+          var theme =
+            savedTheme === 'light' || savedTheme === 'dark'
+              ? savedTheme
+              : window.matchMedia('(prefers-color-scheme: light)').matches
+                ? 'light'
+                : 'dark';
+          document.documentElement.setAttribute('data-theme', theme);
+          var meta = document.getElementById('meta-theme-color');
+          if (meta) meta.setAttribute('content', theme === 'light' ? '#f4f7fc' : '#060911');
         } catch (_) {}
       })();
     </script>
 
-    <link rel="stylesheet" href="styles.css?v=20261111" />
+    <link rel="stylesheet" href="styles.css?v=20261112" />
   </head>
   <body>
     <!-- Ambient optical backdrop -->
@@ -99,22 +94,17 @@
             <span class="brand-word">LYU<span class="brand-dot">.ai</span></span>
           </a>
           <span class="brand-divider" aria-hidden="true"></span>
-          <span class="brand-tag" data-i18n="nav.badge">Independent AI Software Company</span>
+          <span class="brand-tag">Independent AI Software Company</span>
         </div>
 
         <nav class="primary-nav" aria-label="Primary navigation">
-          <a href="#vision" class="nav-link" data-i18n="nav.vision">Vision</a>
-          <a href="#architecture" class="nav-link" data-i18n="nav.architecture">Architecture</a>
-          <a href="#company" class="nav-link" data-i18n="nav.company">Company</a>
-          <a href="#principles" class="nav-link" data-i18n="nav.principles">Invariants</a>
+          <a href="#vision" class="nav-link">Vision</a>
+          <a href="#architecture" class="nav-link">Architecture</a>
+          <a href="#company" class="nav-link">Company</a>
+          <a href="#principles" class="nav-link">Invariants</a>
         </nav>
 
         <div class="topbar-actions">
-          <div class="lang-switch" role="group" aria-label="Language switcher">
-            <button type="button" class="lang-btn is-active" data-set-lang="en">EN</button>
-            <button type="button" class="lang-btn" data-set-lang="zh">中文</button>
-          </div>
-
           <button
             type="button"
             class="icon-btn"
@@ -154,14 +144,14 @@
           <div class="hero-header reveal">
             <div class="eyebrow-pill">
               <span class="pulse-dot" aria-hidden="true"></span>
-              <span data-i18n="hero.eyebrow">LYU.AI · APPLIED INTELLIGENCE &amp; DETERMINISTIC SYSTEMS</span>
+              <span>LYU.AI · APPLIED INTELLIGENCE &amp; DETERMINISTIC SYSTEMS</span>
             </div>
 
-            <h1 id="hero-heading" class="hero-title" data-i18n-html="hero.title">
+            <h1 id="hero-heading" class="hero-title">
               Intelligence, compiled into <span class="serif-italic">enduring craft.</span>
             </h1>
 
-            <p class="hero-lead" data-i18n="hero.lead">
+            <p class="hero-lead">
               Most AI software stops at plausible surfaces — disposable outputs that impress for ten seconds and
               fracture the moment real work begins. LYU.ai is an independent software company building systems where
               multimodal perception resolves through deterministic kernels into native, precision-engineered artifacts.
@@ -169,13 +159,13 @@
 
             <div class="hero-cta-row">
               <a href="#vision" class="btn-primary">
-                <span data-i18n="hero.ctaPrimary">Read the Vision</span>
+                <span>Read the Vision</span>
                 <span aria-hidden="true">↓</span>
               </a>
               <button type="button" class="btn-secondary copy-email-btn" data-email="hi@lyu.ai">
                 <span class="mono-dot" aria-hidden="true"></span>
-                <span class="copy-email-label" data-i18n="hero.ctaEmail">hi@lyu.ai</span>
-                <span class="copy-badge" data-i18n="common.copy">Copy</span>
+                <span class="copy-email-label">hi@lyu.ai</span>
+                <span class="copy-badge">Copy</span>
               </button>
             </div>
           </div>
@@ -185,7 +175,7 @@
             <div class="stage-toolbar">
               <div class="stage-meta">
                 <span class="stage-indicator" aria-hidden="true"></span>
-                <span class="stage-title" data-i18n="stage.title">REFRACTIVE COMPILER BENCH</span>
+                <span class="stage-title">REFRACTIVE COMPILER BENCH</span>
                 <span class="stage-telemetry" id="stage-telemetry">θ +0.0° · ε = 0.000 · NATIVE AST</span>
               </div>
 
@@ -196,7 +186,6 @@
                   aria-selected="true"
                   class="mode-tab is-active"
                   data-stage-mode="convergence"
-                  data-i18n="stage.mode1"
                 >
                   01 · Optical Convergence
                 </button>
@@ -206,7 +195,6 @@
                   aria-selected="false"
                   class="mode-tab"
                   data-stage-mode="lattice"
-                  data-i18n="stage.mode2"
                 >
                   02 · Constraint Lattice
                 </button>
@@ -216,7 +204,6 @@
                   aria-selected="false"
                   class="mode-tab"
                   data-stage-mode="wireframe"
-                  data-i18n="stage.mode3"
                 >
                   03 · Native Primitives
                 </button>
@@ -230,21 +217,21 @@
               <div class="stage-zone-labels" aria-hidden="true">
                 <div class="zone-label zone-left">
                   <span class="zone-index">INPUT FIELD</span>
-                  <span class="zone-name" data-i18n="stage.zoneLeft">Unstructured Perceptual Context</span>
+                  <span class="zone-name">Unstructured Perceptual Context</span>
                 </div>
                 <div class="zone-label zone-center">
                   <span class="zone-index">KERNEL</span>
-                  <span class="zone-name" data-i18n="stage.zoneCenter">Refractive Solver</span>
+                  <span class="zone-name">Refractive Solver</span>
                 </div>
                 <div class="zone-label zone-right">
                   <span class="zone-index">OUTPUT ARTIFACT</span>
-                  <span class="zone-name" data-i18n="stage.zoneRight">100% Native Editable Structure</span>
+                  <span class="zone-name">100% Native Editable Structure</span>
                 </div>
               </div>
             </div>
 
             <div class="stage-footer">
-              <p class="stage-hint" data-i18n="stage.hint">
+              <p class="stage-hint">
                 Move cursor across the optical bench to perturb incident perception and observe real-time geometric convergence.
               </p>
               <span class="stage-spec">60 HZ · ZERO RASTER FALLBACK</span>
@@ -261,28 +248,28 @@
           <div class="section-index-row reveal">
             <span class="section-index">01 / VISION</span>
             <span class="section-rule" aria-hidden="true"></span>
-            <span class="section-caption" data-i18n="vision.kicker">Closing the chasm between plausible and usable</span>
+            <span class="section-caption">Closing the chasm between plausible and usable</span>
           </div>
 
           <div class="vision-grid">
             <div class="vision-prose reveal">
-              <h2 id="vision-heading" class="section-title" data-i18n-html="vision.title">
+              <h2 id="vision-heading" class="section-title">
                 Beyond the illusion <span class="serif-italic">of generation.</span>
               </h2>
 
-              <p data-i18n="vision.p1">
+              <p>
                 The first wave of generative software optimized for instant spectacle. It traded structural integrity
                 for surface fluency — producing flattened pixels, rigid card streams, and opaque black-box outputs that
                 strip professionals of agency the moment a single detail needs refinement.
               </p>
 
-              <p data-i18n="vision.p2">
+              <p>
                 Serious creative and analytical work does not live in disposable previews. It demands artifacts with
                 true anatomy: explicit geometry, clean hierarchy, semantic relationships, and lossless human control.
                 When an AI system flattens structure into an approximation, it turns a collaborator into a slot machine.
               </p>
 
-              <p class="prose-highlight" data-i18n="vision.p3">
+              <p class="prose-highlight">
                 Our conviction is simple: machine intelligence should never trap human intent inside dead surfaces. It
                 should perceive deeply, reason spatially, and hand back living, native structure.
               </p>
@@ -292,13 +279,13 @@
             <div class="xray-card crystal-surface spotlight-card reveal" id="xray-widget">
               <div class="xray-header">
                 <div class="xray-header-left">
-                  <span class="mono-tag" data-i18n="xray.badge">STRUCTURAL X-RAY</span>
-                  <span class="xray-subtitle" data-i18n="xray.subtitle">Drag loupe or inspect primitives</span>
+                  <span class="mono-tag">STRUCTURAL X-RAY</span>
+                  <span class="xray-subtitle">Drag loupe or click primitives</span>
                 </div>
                 <div class="xray-presets" role="group" aria-label="Comparison split presets">
-                  <button type="button" class="preset-btn" data-xray-set="88" data-i18n="xray.btnIllusion">Surface</button>
-                  <button type="button" class="preset-btn is-active" data-xray-set="46" data-i18n="xray.btnSplit">Split</button>
-                  <button type="button" class="preset-btn" data-xray-set="12" data-i18n="xray.btnNative">Native</button>
+                  <button type="button" class="preset-btn" data-xray-set="88">Surface</button>
+                  <button type="button" class="preset-btn is-active" data-xray-set="46">Split</button>
+                  <button type="button" class="preset-btn" data-xray-set="12">Native</button>
                 </div>
               </div>
 
@@ -307,7 +294,7 @@
                 <div class="xray-layer xray-native" aria-label="Native compiled vector representation">
                   <div class="layer-pill layer-pill-native">
                     <span class="pill-dot-cyan"></span>
-                    <span data-i18n="xray.nativeTag">NATIVE STRUCTURE · EDITABLE</span>
+                    <span>NATIVE STRUCTURE · EDITABLE</span>
                   </div>
 
                   <svg class="xray-svg" viewBox="0 0 520 320" fill="none" role="img" aria-label="Interactive vector scene">
@@ -456,7 +443,7 @@
                 <div class="xray-layer xray-illusion" id="xray-illusion-clip" aria-hidden="true">
                   <div class="layer-pill layer-pill-illusion">
                     <span class="pill-dot-amber"></span>
-                    <span data-i18n="xray.illusionTag">SURFACE ILLUSION · LOCKED</span>
+                    <span>SURFACE ILLUSION · LOCKED</span>
                   </div>
 
                   <div class="raster-pixel-grid"></div>
@@ -520,14 +507,14 @@
           <div class="section-index-row reveal">
             <span class="section-index">02 / ARCHITECTURE</span>
             <span class="section-rule" aria-hidden="true"></span>
-            <span class="section-caption" data-i18n="arch.kicker">How we turn frontier perception into dependable tools</span>
+            <span class="section-caption">How we turn frontier perception into dependable tools</span>
           </div>
 
           <div class="section-header-wide reveal">
-            <h2 id="arch-heading" class="section-title" data-i18n-html="arch.title">
+            <h2 id="arch-heading" class="section-title">
               Judgment from intelligence.<br /><span class="serif-italic">Precision from mathematics.</span>
             </h2>
-            <p class="section-sublead" data-i18n="arch.lead">
+            <p class="section-sublead">
               Every system we build separates what neural models do best — holistic perception, aesthetic judgment, and
               contextual synthesis — from what formal kernels guarantee: exact geometry, structural invariants, and
               native compatibility.
@@ -544,7 +531,6 @@
                   <rect x="32" y="68" width="40" height="46" rx="5" fill="currentColor" fill-opacity="0.06" stroke="currentColor" stroke-opacity="0.28" />
                   <rect x="80" y="68" width="40" height="46" rx="5" fill="#818CF8" fill-opacity="0.14" stroke="#818CF8" stroke-opacity="0.55" />
                   <line class="scan-beam" x1="14" y1="52" x2="138" y2="52" stroke="#38BDF8" stroke-width="1.5" />
-                  <!-- Extracted topology graph -->
                   <path d="M134 46 C 166 46, 174 38, 206 38" stroke="#38BDF8" stroke-width="1.4" stroke-dasharray="3 3" />
                   <path d="M134 91 C 166 91, 174 74, 206 74" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.3" />
                   <path d="M134 91 C 166 91, 174 110, 206 110" stroke="#818CF8" stroke-width="1.4" />
@@ -559,8 +545,8 @@
                 </svg>
               </div>
               <div class="pillar-meta">01 · PERCEPTION</div>
-              <h3 class="pillar-title" data-i18n="arch.p1Title">High-dimensional visual &amp; semantic reading</h3>
-              <p class="pillar-body" data-i18n="arch.p1Body">
+              <h3 class="pillar-title">High-dimensional visual &amp; semantic reading</h3>
+              <p class="pillar-body">
                 Reading composition, optical contrast, spatial hierarchy, and implicit domain intent as a unified whole
                 — understanding why an artifact works visually before touching a single coordinate.
               </p>
@@ -591,8 +577,8 @@
                 </svg>
               </div>
               <div class="pillar-meta">02 · COMPILER KERNEL</div>
-              <h3 class="pillar-title" data-i18n="arch.p2Title">Small, template-free deterministic solvers</h3>
-              <p class="pillar-body" data-i18n="arch.p2Body">
+              <h3 class="pillar-title">Small, template-free deterministic solvers</h3>
+              <p class="pillar-body">
                 We reject rigid slot-filling templates and brittle special-case patches. Compact mathematical kernels
                 enforce geometric alignment, optical balance, and formal constraints from first principles.
               </p>
@@ -602,12 +588,10 @@
             <article class="pillar-card crystal-surface spotlight-card reveal">
               <div class="pillar-diagram" aria-hidden="true">
                 <svg viewBox="0 0 320 148" fill="none">
-                  <!-- Core Native Artifact -->
                   <rect x="30" y="44" width="84" height="60" rx="10" fill="rgba(56, 189, 248, 0.11)" stroke="#38BDF8" stroke-width="1.6" />
                   <text x="47" y="71" class="svg-mono-label" fill="currentColor">NATIVE</text>
                   <text x="53" y="86" class="svg-mono-label" fill="#38BDF8">AST</text>
 
-                  <!-- Outbound composable channels -->
                   <path d="M114 60 C 156 60, 162 34, 202 34" stroke="#38BDF8" stroke-width="1.5" />
                   <path d="M114 74 L 202 74" stroke="currentColor" stroke-opacity="0.45" stroke-width="1.5" />
                   <path d="M114 88 C 156 88, 162 114, 202 114" stroke="#818CF8" stroke-width="1.5" />
@@ -623,8 +607,8 @@
                 </svg>
               </div>
               <div class="pillar-meta">03 · NATIVE DELIVERY</div>
-              <h3 class="pillar-title" data-i18n="arch.p3Title">Universal standards &amp; composable agency</h3>
-              <p class="pillar-body" data-i18n="arch.p3Body">
+              <h3 class="pillar-title">Universal standards &amp; composable agency</h3>
+              <p class="pillar-body">
                 Great software meets users and autonomous agents inside the ecosystems they already trust — outputting
                 clean, standard-compliant structures that preserve untouched state and welcome manual craft.
               </p>
@@ -641,20 +625,20 @@
           <div class="section-index-row reveal">
             <span class="section-index">03 / OPERATING MODEL</span>
             <span class="section-rule" aria-hidden="true"></span>
-            <span class="section-caption" data-i18n="company.kicker">High-density independent engineering</span>
+            <span class="section-caption">High-density independent engineering</span>
           </div>
 
           <div class="company-layout">
             <div class="company-intro reveal">
-              <h2 id="company-heading" class="section-title" data-i18n-html="company.title">
+              <h2 id="company-heading" class="section-title">
                 One company.<br /><span class="serif-italic">Undivided architecture.</span>
               </h2>
-              <p class="company-lead" data-i18n="company.lead">
+              <p class="company-lead">
                 LYU.ai is an independent, founder-led software company by deliberate design. The hardest problems in
                 applied intelligence sit right at the seam between visual taste, mathematical kernels, and product
                 ergonomics — the exact seam where sprawling, committee-driven organizations fracture.
               </p>
-              <p class="company-sub" data-i18n="company.sub">
+              <p class="company-sub">
                 By pairing singular architectural ownership with an autonomous fleet of coding, benchmarking, and
                 verification agents, one disciplined studio can ship foundational software with institutional rigor and
                 zero organizational entropy.
@@ -662,9 +646,8 @@
 
               <!-- Closed-Loop Studio Flywheel Schematic -->
               <div class="flywheel-box crystal-surface">
-                <div class="flywheel-label" data-i18n="company.loopTitle">CLOSED-LOOP R&amp;D ARCHITECTURE</div>
+                <div class="flywheel-label">CLOSED-LOOP R&amp;D ARCHITECTURE</div>
                 <svg class="flywheel-svg" viewBox="0 0 460 132" fill="none" role="img" aria-label="Closed-loop engineering system">
-                  <!-- Continuous circuit loop -->
                   <rect
                     x="18"
                     y="26"
@@ -687,14 +670,12 @@
                     stroke-dasharray="48 860"
                   />
 
-                  <!-- 3 stations along the loop -->
                   <g transform="translate(34, 44)">
                     <rect width="112" height="44" rx="10" class="flywheel-node" />
                     <text x="56" y="19" text-anchor="middle" class="svg-mono-tiny" fill="#38BDF8">01 · DIRECTION</text>
-                    <text x="56" y="33" text-anchor="middle" class="svg-node-title" fill="currentColor" data-i18n="company.node1">Singular Taste</text>
+                    <text x="56" y="33" text-anchor="middle" class="svg-node-title" fill="currentColor">Singular Taste</text>
                   </g>
 
-                  <!-- Connector 01 -> 02 -->
                   <g stroke="currentColor" stroke-opacity="0.38" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="150" y1="66" x2="169" y2="66" />
                     <polyline points="165,62.5 169.5,66 165,69.5" />
@@ -703,10 +684,9 @@
                   <g transform="translate(174, 44)">
                     <rect width="112" height="44" rx="10" class="flywheel-node" />
                     <text x="56" y="19" text-anchor="middle" class="svg-mono-tiny" fill="#818CF8">02 · SYNTHESIS</text>
-                    <text x="56" y="33" text-anchor="middle" class="svg-node-title" fill="currentColor" data-i18n="company.node2">Agentic Fleet</text>
+                    <text x="56" y="33" text-anchor="middle" class="svg-node-title" fill="currentColor">Agentic Fleet</text>
                   </g>
 
-                  <!-- Connector 02 -> 03 -->
                   <g stroke="currentColor" stroke-opacity="0.38" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="290" y1="66" x2="309" y2="66" />
                     <polyline points="305,62.5 309.5,66 305,69.5" />
@@ -715,7 +695,7 @@
                   <g transform="translate(314, 44)">
                     <rect width="112" height="44" rx="10" class="flywheel-node" />
                     <text x="56" y="19" text-anchor="middle" class="svg-mono-tiny" fill="#34D399">03 · EVIDENCE</text>
-                    <text x="56" y="33" text-anchor="middle" class="svg-node-title" fill="currentColor" data-i18n="company.node3">Truth Gates</text>
+                    <text x="56" y="33" text-anchor="middle" class="svg-node-title" fill="currentColor">Truth Gates</text>
                   </g>
                 </svg>
               </div>
@@ -725,8 +705,8 @@
               <article class="guarantee-card crystal-surface spotlight-card reveal">
                 <span class="guarantee-num">I</span>
                 <div>
-                  <h3 data-i18n="company.c1Title">Undivided Systems Coherence</h3>
-                  <p data-i18n="company.c1Body">
+                  <h3>Undivided Systems Coherence</h3>
+                  <p>
                     Perception prompts, mathematical solvers, API contracts, and interface typography are designed in a
                     single mental loop — eliminating handoff decay and glue-code bloat.
                   </p>
@@ -736,8 +716,8 @@
               <article class="guarantee-card crystal-surface spotlight-card reveal">
                 <span class="guarantee-num">II</span>
                 <div>
-                  <h3 data-i18n="company.c2Title">Agent-Multiplied Engineering Bandwidth</h3>
-                  <p data-i18n="company.c2Body">
+                  <h3>Agent-Multiplied Engineering Bandwidth</h3>
+                  <p>
                     Internally orchestrated multi-agent workflows execute parallel synthesis, regression sweeps, and
                     artifact audits around the clock under direct principal supervision.
                   </p>
@@ -747,8 +727,8 @@
               <article class="guarantee-card crystal-surface spotlight-card reveal">
                 <span class="guarantee-num">III</span>
                 <div>
-                  <h3 data-i18n="company.c3Title">Ground-Truth Verification Gates</h3>
-                  <p data-i18n="company.c3Body">
+                  <h3>Ground-Truth Verification Gates</h3>
+                  <p>
                     No change ships on intuition or demo theatrics. Every solver iteration is held to reproducible
                     end-to-end artifact validation, explicit latency ceilings, and cost ledgers.
                   </p>
@@ -758,8 +738,8 @@
               <article class="guarantee-card crystal-surface spotlight-card reveal">
                 <span class="guarantee-num">IV</span>
                 <div>
-                  <h3 data-i18n="company.c4Title">Independent, Long-Horizon Stewardship</h3>
-                  <p data-i18n="company.c4Body">
+                  <h3>Independent, Long-Horizon Stewardship</h3>
+                  <p>
                     Free from short-term fundraising theater or bloated overhead, we optimize strictly for product
                     durability, sustainable unit economics, and customer trust.
                   </p>
@@ -778,11 +758,11 @@
           <div class="section-index-row reveal">
             <span class="section-index">04 / INVARIANTS</span>
             <span class="section-rule" aria-hidden="true"></span>
-            <span class="section-caption" data-i18n="principles.kicker">Non-negotiable engineering axioms</span>
+            <span class="section-caption">Non-negotiable engineering axioms</span>
           </div>
 
           <div class="principles-header reveal">
-            <h2 id="principles-heading" class="section-title" data-i18n-html="principles.title">
+            <h2 id="principles-heading" class="section-title">
               Rules we <span class="serif-italic">do not bend.</span>
             </h2>
           </div>
@@ -790,8 +770,8 @@
           <div class="invariants-ledger reveal">
             <div class="invariant-row">
               <span class="invariant-code">AXIOM 01</span>
-              <h3 class="invariant-name" data-i18n="principles.i1Title">Native over simulated</h3>
-              <p class="invariant-desc" data-i18n="principles.i1Body">
+              <h3 class="invariant-name">Native over simulated</h3>
+              <p class="invariant-desc">
                 Never disguise a flattened approximation as working structure. Construct real, native objects — and
                 surface honest boundaries where unsolved residuals remain.
               </p>
@@ -799,8 +779,8 @@
 
             <div class="invariant-row">
               <span class="invariant-code">AXIOM 02</span>
-              <h3 class="invariant-name" data-i18n="principles.i2Title">First principles over patches</h3>
-              <p class="invariant-desc" data-i18n="principles.i2Body">
+              <h3 class="invariant-name">First principles over patches</h3>
+              <p class="invariant-desc">
                 Every rule must generalize from optical physics, pixel geometry, and domain-agnostic semantics — never
                 hardcoded special cases that overfit a benchmark.
               </p>
@@ -808,8 +788,8 @@
 
             <div class="invariant-row">
               <span class="invariant-code">AXIOM 03</span>
-              <h3 class="invariant-name" data-i18n="principles.i3Title">Preserve unselected human work</h3>
-              <p class="invariant-desc" data-i18n="principles.i3Body">
+              <h3 class="invariant-name">Preserve unselected human work</h3>
+              <p class="invariant-desc">
                 Scoped edits must respect locked and unselected elements without collateral mutation. Intelligence
                 assists the author; it never overwrites their craft.
               </p>
@@ -817,8 +797,8 @@
 
             <div class="invariant-row">
               <span class="invariant-code">AXIOM 04</span>
-              <h3 class="invariant-name" data-i18n="principles.i4Title">Verify the whole artifact</h3>
-              <p class="invariant-desc" data-i18n="principles.i4Body">
+              <h3 class="invariant-name">Verify the whole artifact</h3>
+              <p class="invariant-desc">
                 Aggregate similarity scores can hide broken details. Acceptance requires independent, end-to-end
                 validation of the actual delivered output in its native environment.
               </p>
@@ -828,22 +808,22 @@
           <!-- Closing Monograph Banner -->
           <div class="closing-monograph crystal-surface spotlight-card reveal">
             <div class="closing-left">
-              <span class="mono-tag" data-i18n="closing.kicker">LYU.AI · EST. 2026</span>
-              <h2 class="closing-title" data-i18n-html="closing.title">
+              <span class="mono-tag">LYU.AI · EST. 2026</span>
+              <h2 class="closing-title">
                 Small by conviction.<br /><span class="serif-italic">Rigorous by architecture.</span>
               </h2>
-              <p class="closing-body" data-i18n="closing.body">
+              <p class="closing-body">
                 For enterprise partnerships, engineering inquiries, or research correspondence, reach out directly.
               </p>
             </div>
 
             <div class="closing-actions">
               <a href="mailto:hi@lyu.ai" class="btn-primary">
-                <span data-i18n="closing.emailCta">Write to hi@lyu.ai</span>
+                <span>Write to hi@lyu.ai</span>
                 <span aria-hidden="true">↗</span>
               </a>
               <a href="https://github.com/lyuai" target="_blank" rel="noreferrer" class="btn-secondary">
-                <span data-i18n="closing.githubCta">Explore Open Engineering</span>
+                <span>Explore Open Engineering</span>
                 <span aria-hidden="true">↗</span>
               </a>
             </div>
@@ -858,7 +838,7 @@
         <div class="footer-left">
           <span class="footer-brand">LYU.ai</span>
           <span class="footer-sep" aria-hidden="true">·</span>
-          <span data-i18n="footer.legal">Independent AI Software Company. All rights reserved.</span>
+          <span>Independent AI Software Company. All rights reserved.</span>
         </div>
 
         <div class="footer-links">
@@ -869,6 +849,6 @@
       </div>
     </footer>
 
-    <script type="module" src="main.js?v=20261111"></script>
+    <script type="module" src="main.js?v=20261112"></script>
   </body>
 </html>
