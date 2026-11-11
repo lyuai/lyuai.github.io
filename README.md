@@ -1,5 +1,7 @@
-# LYU.ai homepage
+# LYU.ai
 
-The static homepage for [lyu.ai](https://lyu.ai).
+Official website for [LYU.ai](https://lyu.ai) — an independent AI software company compiling multimodal perception into deterministic, native, human-editable craft.
 
-LYU.ai explores AI coding and embodied intelligence: perception, human–robot interaction, motion, manipulation, and imitation learning.
+- **Domain**: [lyu.ai](https://lyu.ai)
+- **Contact**: [hi@lyu.ai](mailto:hi@lyu.ai)
+- **Agent Manifest**: [`/llms.txt`](./llms.txt)

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="lyu-facet-a" x1="10" y1="8" x2="54" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="52%" stop-color="#818CF8" />
+      <stop offset="100%" stop-color="#E2E8F0" />
+    </linearGradient>
+    <linearGradient id="lyu-facet-b" x1="52" y1="12" x2="18" y2="54" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F8FAFC" stop-opacity="0.96" />
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.78" />
+    </linearGradient>
+  </defs>
+  <!-- Outer precision aperture frame -->
+  <rect x="4" y="4" width="56" height="56" rx="15" fill="#0B101B" />
+  <rect x="4.75" y="4.75" width="54.5" height="54.5" rx="14.25" stroke="url(#lyu-facet-a)" stroke-opacity="0.42" stroke-width="1.5" />
+  <!-- Refractive tri-axial prism facets -->
+  <path d="M32 13L49 23.2V41.8L32 51L32 32.5L15 23.2L32 13Z" fill="url(#lyu-facet-b)" fill-opacity="0.16" />
+  <path d="M32 13L49 23.2L32 32.5L15 23.2L32 13Z" fill="url(#lyu-facet-b)" />
+  <path d="M15 23.2L32 32.5V51L15 41.8V23.2Z" fill="#38BDF8" fill-opacity="0.52" />
+  <path d="M49 23.2L32 32.5V51L49 41.8V23.2Z" fill="#818CF8" fill-opacity="0.34" />
+  <!-- Crisp geometric convergence lines -->
+  <path d="M32 13L49 23.2V41.8L32 51L15 41.8V23.2L32 13Z" stroke="#F8FAFC" stroke-opacity="0.72" stroke-width="1.35" stroke-linejoin="round" />
+  <path d="M15 23.2L32 32.5M49 23.2L32 32.5M32 32.5V51" stroke="#F8FAFC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Central focal vertex -->
+  <circle cx="32" cy="32.5" r="3" fill="#FFFFFF" />
+</svg>
