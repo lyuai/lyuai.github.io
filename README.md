@@ -1,7 +1,5 @@
 # LYU.ai
 
-Official website for [LYU.ai](https://lyu.ai) — an independent AI software company compiling multimodal perception into deterministic, native, human-editable craft.
+Official homepage for [LYU.ai](https://lyu.ai) — an independent AI company building agents for robotics, healthcare, and productivity.
 
-- **Domain**: [lyu.ai](https://lyu.ai)
-- **Contact**: [hi@lyu.ai](mailto:hi@lyu.ai)
-- **Agent Manifest**: [`/llms.txt`](./llms.txt)
+> *Transcend our limits. Enjoy being alive.*

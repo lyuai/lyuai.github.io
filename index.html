@@ -3,28 +3,28 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>LYU.ai — Independent AI Software Company</title>
+    <title>LYU.ai — Transcend our limits. Enjoy being alive.</title>
     <meta
       name="description"
-      content="LYU.ai is an independent AI software company compiling multimodal perception into deterministic, native, human-editable craft."
+      content="LYU.ai is an independent AI company building agents for robotics, healthcare, and productivity — helping humanity transcend its limits and enjoy life."
     />
-    <meta name="theme-color" content="#060911" id="meta-theme-color" />
+    <meta name="theme-color" content="#07080d" id="meta-theme-color" />
 
     <!-- OpenGraph / Social -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="LYU.ai" />
     <meta property="og:url" content="https://lyu.ai/" />
-    <meta property="og:title" content="LYU.ai — Intelligence, compiled into enduring craft." />
+    <meta property="og:title" content="LYU.ai — Transcend our limits. Enjoy being alive." />
     <meta
       property="og:description"
-      content="An independent AI software company bridging frontier multimodal perception and deterministic mathematical kernels to build native, precision-engineered tools."
+      content="An independent AI company building agents for robotics, healthcare, and productivity."
     />
     <meta property="og:image" content="https://lyu.ai/assets/og-card.png" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="LYU.ai — Intelligence, compiled into enduring craft." />
+    <meta name="twitter:title" content="LYU.ai — Transcend our limits. Enjoy being alive." />
     <meta
       name="twitter:description"
-      content="An independent AI software company bridging frontier multimodal perception and deterministic mathematical kernels."
+      content="An independent AI company building agents for robotics, healthcare, and productivity."
     />
     <meta name="twitter:image" content="https://lyu.ai/assets/og-card.png" />
 
@@ -51,66 +51,56 @@
                 : 'dark';
           document.documentElement.setAttribute('data-theme', theme);
           var meta = document.getElementById('meta-theme-color');
-          if (meta) meta.setAttribute('content', theme === 'light' ? '#f4f7fc' : '#060911');
+          if (meta) meta.setAttribute('content', theme === 'light' ? '#f7f6f2' : '#07080d');
         } catch (_) {}
       })();
     </script>
 
-    <link rel="stylesheet" href="styles.css?v=20261112" />
+    <link rel="stylesheet" href="styles.css?v=20261112b" />
   </head>
   <body>
-    <!-- Ambient optical backdrop -->
-    <div class="ambient-field" aria-hidden="true">
-      <div class="ambient-aurora ambient-aurora-a"></div>
-      <div class="ambient-aurora ambient-aurora-b"></div>
-      <div class="ambient-grid"></div>
-    </div>
+    <!-- Subtle tactile grain overlay -->
+    <div class="grain-overlay" aria-hidden="true"></div>
 
-    <!-- Sticky Architectural Header -->
-    <header class="topbar" id="top">
+    <!-- Header -->
+    <header class="topbar">
       <div class="topbar-inner">
-        <div class="brand-cluster">
-          <a class="brand" href="./" aria-label="LYU.ai home">
-            <svg class="brand-mark" viewBox="0 0 64 64" fill="none" aria-hidden="true">
-              <path
-                d="M32 8L53 20.2V44.2L32 56L11 44.2V20.2L32 8Z"
-                fill="currentColor"
-                fill-opacity="0.09"
-                stroke="currentColor"
-                stroke-width="2.6"
-                stroke-linejoin="round"
-              />
-              <path d="M32 8L53 20.2L32 32.2L11 20.2L32 8Z" fill="currentColor" fill-opacity="0.28" />
-              <path d="M11 20.2L32 32.2V56L11 44.2V20.2Z" fill="currentColor" fill-opacity="0.14" />
-              <path
-                d="M11 20.2L32 32.2M53 20.2L32 32.2M32 32.2V56"
-                stroke="currentColor"
-                stroke-width="2.6"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <circle cx="32" cy="32.2" r="4" class="brand-vertex" />
-            </svg>
-            <span class="brand-word">LYU<span class="brand-dot">.ai</span></span>
-          </a>
-          <span class="brand-divider" aria-hidden="true"></span>
-          <span class="brand-tag">Independent AI Software Company</span>
-        </div>
+        <a class="brand" href="./" aria-label="LYU.ai home">
+          <svg class="brand-mark" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+            <path
+              d="M32 8L53 20.2V44.2L32 56L11 44.2V20.2L32 8Z"
+              fill="currentColor"
+              fill-opacity="0.08"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linejoin="round"
+            />
+            <path d="M32 8L53 20.2L32 32.2L11 20.2L32 8Z" fill="currentColor" fill-opacity="0.24" />
+            <path
+              d="M11 20.2L32 32.2M53 20.2L32 32.2M32 32.2V56"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <circle cx="32" cy="32.2" r="4" class="brand-vertex" />
+          </svg>
+          <span class="brand-word">LYU<span class="brand-dot">.ai</span></span>
+        </a>
 
-        <nav class="primary-nav" aria-label="Primary navigation">
-          <a href="#vision" class="nav-link">Vision</a>
-          <a href="#architecture" class="nav-link">Architecture</a>
-          <a href="#company" class="nav-link">Company</a>
-          <a href="#principles" class="nav-link">Invariants</a>
-        </nav>
+        <div class="topbar-right">
+          <nav class="primary-nav" aria-label="Primary navigation">
+            <a href="#vision" class="nav-link">Vision</a>
+            <a href="#focus" class="nav-link">Focus</a>
+            <a href="#company" class="nav-link">Company</a>
+          </nav>
 
-        <div class="topbar-actions">
           <button
             type="button"
             class="icon-btn"
             id="theme-toggle"
             aria-label="Toggle color theme"
-            title="Switch optical theme"
+            title="Switch theme"
           >
             <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
               <circle cx="12" cy="12" r="4.2" />
@@ -137,362 +127,68 @@
 
     <main>
       <!-- =================================================================== -->
-      <!-- HERO: THESIS + INTERACTIVE OPTICAL COMPILER STAGE                   -->
+      <!-- HERO: LUMINOUS HORIZON + HUMAN VISION                               -->
       <!-- =================================================================== -->
-      <section class="hero-section" aria-labelledby="hero-heading">
-        <div class="container">
-          <div class="hero-header reveal">
-            <div class="eyebrow-pill">
-              <span class="pulse-dot" aria-hidden="true"></span>
-              <span>LYU.AI · APPLIED INTELLIGENCE &amp; DETERMINISTIC SYSTEMS</span>
-            </div>
+      <section class="hero" aria-labelledby="hero-heading">
+        <div class="hero-canvas-wrap" aria-hidden="true">
+          <canvas id="horizon-canvas"></canvas>
+          <div class="hero-canvas-vignette"></div>
+        </div>
 
-            <h1 id="hero-heading" class="hero-title">
-              Intelligence, compiled into <span class="serif-italic">enduring craft.</span>
-            </h1>
-
-            <p class="hero-lead">
-              Most AI software stops at plausible surfaces — disposable outputs that impress for ten seconds and
-              fracture the moment real work begins. LYU.ai is an independent software company building systems where
-              multimodal perception resolves through deterministic kernels into native, precision-engineered artifacts.
-            </p>
-
-            <div class="hero-cta-row">
-              <a href="#vision" class="btn-primary">
-                <span>Read the Vision</span>
-                <span aria-hidden="true">↓</span>
-              </a>
-              <button type="button" class="btn-secondary copy-email-btn" data-email="hi@lyu.ai">
-                <span class="mono-dot" aria-hidden="true"></span>
-                <span class="copy-email-label">hi@lyu.ai</span>
-                <span class="copy-badge">Copy</span>
-              </button>
-            </div>
+        <div class="container hero-content">
+          <div class="eyebrow reveal">
+            <span class="eyebrow-dot" aria-hidden="true"></span>
+            <span>LYU.AI · INDEPENDENT AI COMPANY</span>
           </div>
 
-          <!-- Interactive Optical Refraction & Native Geometry Stage -->
-          <div class="optical-stage-card crystal-surface reveal" id="optical-stage">
-            <div class="stage-toolbar">
-              <div class="stage-meta">
-                <span class="stage-indicator" aria-hidden="true"></span>
-                <span class="stage-title">REFRACTIVE COMPILER BENCH</span>
-                <span class="stage-telemetry" id="stage-telemetry">θ +0.0° · ε = 0.000 · NATIVE AST</span>
-              </div>
+          <h1 id="hero-heading" class="hero-title reveal">
+            Transcend our limits.<br />
+            <span class="serif-italic">Enjoy being alive.</span>
+          </h1>
 
-              <div class="stage-modes" role="tablist" aria-label="Optical compiler inspection mode">
-                <button
-                  type="button"
-                  role="tab"
-                  aria-selected="true"
-                  class="mode-tab is-active"
-                  data-stage-mode="convergence"
-                >
-                  01 · Optical Convergence
-                </button>
-                <button
-                  type="button"
-                  role="tab"
-                  aria-selected="false"
-                  class="mode-tab"
-                  data-stage-mode="lattice"
-                >
-                  02 · Constraint Lattice
-                </button>
-                <button
-                  type="button"
-                  role="tab"
-                  aria-selected="false"
-                  class="mode-tab"
-                  data-stage-mode="wireframe"
-                >
-                  03 · Native Primitives
-                </button>
-              </div>
-            </div>
+          <p class="hero-lead reveal">
+            We build intelligent agents for robotics, healthcare, and productivity — systems that shoulder complexity so
+            humanity can reach further, live healthier, and return time to life itself.
+          </p>
 
-            <div class="stage-viewport">
-              <canvas id="optical-canvas" aria-label="Interactive simulation showing continuous perceptual waves refracting through a deterministic kernel into aligned native geometric primitives"></canvas>
-
-              <!-- Subtle HUD zone labels -->
-              <div class="stage-zone-labels" aria-hidden="true">
-                <div class="zone-label zone-left">
-                  <span class="zone-index">INPUT FIELD</span>
-                  <span class="zone-name">Unstructured Perceptual Context</span>
-                </div>
-                <div class="zone-label zone-center">
-                  <span class="zone-index">KERNEL</span>
-                  <span class="zone-name">Refractive Solver</span>
-                </div>
-                <div class="zone-label zone-right">
-                  <span class="zone-index">OUTPUT ARTIFACT</span>
-                  <span class="zone-name">100% Native Editable Structure</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="stage-footer">
-              <p class="stage-hint">
-                Move cursor across the optical bench to perturb incident perception and observe real-time geometric convergence.
-              </p>
-              <span class="stage-spec">60 HZ · ZERO RASTER FALLBACK</span>
-            </div>
+          <div class="hero-actions reveal">
+            <a href="#vision" class="btn-primary">
+              <span>Our Vision</span>
+              <span aria-hidden="true">↓</span>
+            </a>
+            <button type="button" class="btn-ghost copy-email-btn" data-email="hi@lyu.ai">
+              <span class="copy-email-text">hi@lyu.ai</span>
+              <span class="copy-badge">Copy</span>
+            </button>
           </div>
         </div>
       </section>
 
       <!-- =================================================================== -->
-      <!-- 01 / VISION: BEYOND THE ILLUSION OF GENERATION                      -->
+      <!-- VISION: WHY WE BUILD                                                -->
       <!-- =================================================================== -->
-      <section class="section" id="vision" aria-labelledby="vision-heading">
+      <section class="section vision-section" id="vision" aria-labelledby="vision-heading">
         <div class="container">
-          <div class="section-index-row reveal">
-            <span class="section-index">01 / VISION</span>
-            <span class="section-rule" aria-hidden="true"></span>
-            <span class="section-caption">Closing the chasm between plausible and usable</span>
-          </div>
+          <div class="vision-layout reveal">
+            <div class="section-label">VISION</div>
 
-          <div class="vision-grid">
-            <div class="vision-prose reveal">
-              <h2 id="vision-heading" class="section-title">
-                Beyond the illusion <span class="serif-italic">of generation.</span>
+            <div class="vision-body">
+              <h2 id="vision-heading" class="vision-statement">
+                Technology reaches its highest purpose when it helps people outgrow their boundaries — and
+                <span class="serif-italic">sets them free to live.</span>
               </h2>
 
-              <p>
-                The first wave of generative software optimized for instant spectacle. It traded structural integrity
-                for surface fluency — producing flattened pixels, rigid card streams, and opaque black-box outputs that
-                strip professionals of agency the moment a single detail needs refinement.
-              </p>
-
-              <p>
-                Serious creative and analytical work does not live in disposable previews. It demands artifacts with
-                true anatomy: explicit geometry, clean hierarchy, semantic relationships, and lossless human control.
-                When an AI system flattens structure into an approximation, it turns a collaborator into a slot machine.
-              </p>
-
-              <p class="prose-highlight">
-                Our conviction is simple: machine intelligence should never trap human intent inside dead surfaces. It
-                should perceive deeply, reason spatially, and hand back living, native structure.
-              </p>
-            </div>
-
-            <!-- Interactive X-Ray Specimen: Surface Illusion vs. Native Structure -->
-            <div class="xray-card crystal-surface spotlight-card reveal" id="xray-widget">
-              <div class="xray-header">
-                <div class="xray-header-left">
-                  <span class="mono-tag">STRUCTURAL X-RAY</span>
-                  <span class="xray-subtitle">Drag loupe or click primitives</span>
-                </div>
-                <div class="xray-presets" role="group" aria-label="Comparison split presets">
-                  <button type="button" class="preset-btn" data-xray-set="88">Surface</button>
-                  <button type="button" class="preset-btn is-active" data-xray-set="46">Split</button>
-                  <button type="button" class="preset-btn" data-xray-set="12">Native</button>
-                </div>
-              </div>
-
-              <div class="xray-stage" id="xray-stage">
-                <!-- BASE LAYER (RIGHT / FULL): Crisp Native Editable Vector AST -->
-                <div class="xray-layer xray-native" aria-label="Native compiled vector representation">
-                  <div class="layer-pill layer-pill-native">
-                    <span class="pill-dot-cyan"></span>
-                    <span>NATIVE STRUCTURE · EDITABLE</span>
-                  </div>
-
-                  <svg class="xray-svg" viewBox="0 0 520 320" fill="none" role="img" aria-label="Interactive vector scene">
-                    <!-- Precision coordinate construction rails -->
-                    <g class="construction-rails" stroke="currentColor" stroke-opacity="0.14" stroke-dasharray="3 3">
-                      <line x1="44" y1="24" x2="44" y2="296" />
-                      <line x1="216" y1="24" x2="216" y2="296" />
-                      <line x1="476" y1="24" x2="476" y2="296" />
-                      <line x1="24" y1="58" x2="496" y2="58" />
-                      <line x1="24" y1="186" x2="496" y2="186" />
-                      <line x1="24" y1="268" x2="496" y2="268" />
-                    </g>
-
-                    <!-- Inspectable Primitive 01: Primary Spatial Frame -->
-                    <g
-                      class="inspectable-node is-selected"
-                      tabindex="0"
-                      data-node-id="Frame#01"
-                      data-node-spec="rect(44, 58, 172, 128) · rx=12 · fill=linearGradient · editable=true"
-                    >
-                      <rect
-                        x="44"
-                        y="58"
-                        width="172"
-                        height="128"
-                        rx="12"
-                        fill="rgba(56, 189, 248, 0.10)"
-                        stroke="#38BDF8"
-                        stroke-width="1.6"
-                      />
-                      <!-- Typography vector baselines -->
-                      <rect x="64" y="80" width="68" height="7" rx="3.5" fill="#38BDF8" fill-opacity="0.7" />
-                      <rect x="64" y="98" width="128" height="12" rx="4" fill="currentColor" fill-opacity="0.88" />
-                      <rect x="64" y="118" width="104" height="12" rx="4" fill="currentColor" fill-opacity="0.52" />
-                      <line x1="64" y1="152" x2="194" y2="152" stroke="currentColor" stroke-opacity="0.22" />
-                      <text x="64" y="169" class="svg-mono-label" fill="currentColor" fill-opacity="0.72">Δx 172.0 · Δy 128.0</text>
-                      <!-- Native vertex handles -->
-                      <rect class="vertex-handle" x="40.5" y="54.5" width="7" height="7" rx="1.5" />
-                      <rect class="vertex-handle" x="212.5" y="54.5" width="7" height="7" rx="1.5" />
-                      <rect class="vertex-handle" x="40.5" y="182.5" width="7" height="7" rx="1.5" />
-                      <rect class="vertex-handle" x="212.5" y="182.5" width="7" height="7" rx="1.5" />
-                    </g>
-
-                    <!-- Inspectable Primitive 02: Parametric Cubic Bezier Flow -->
-                    <g
-                      class="inspectable-node"
-                      tabindex="0"
-                      data-node-id="Spline#02"
-                      data-node-spec="cubicBezier(216,122 → 302,96) · C1 tangent-continuous · residual=0.000"
-                    >
-                      <path
-                        d="M216 122 C 258 122, 260 96, 302 96"
-                        stroke="#818CF8"
-                        stroke-width="2.2"
-                        fill="none"
-                      />
-                      <path
-                        d="M216 122 C 258 122, 262 162, 302 162"
-                        stroke="#38BDF8"
-                        stroke-width="1.8"
-                        stroke-dasharray="4 3"
-                        fill="none"
-                      />
-                      <line x1="216" y1="122" x2="258" y2="122" stroke="#818CF8" stroke-opacity="0.55" stroke-width="1" />
-                      <circle cx="258" cy="122" r="3" fill="#818CF8" />
-                      <circle cx="216" cy="122" r="4" fill="#38BDF8" />
-                      <circle cx="302" cy="96" r="4" fill="#818CF8" />
-                      <circle cx="302" cy="162" r="4" fill="#38BDF8" />
-                    </g>
-
-                    <!-- Inspectable Primitive 03: Precision Radial / Polar Module -->
-                    <g
-                      class="inspectable-node"
-                      tabindex="0"
-                      data-node-id="ConstraintRing#03"
-                      data-node-spec="polarGroup(cx=390, cy=122, r=64) · 6 parametric sectors · vector-true"
-                    >
-                      <rect
-                        x="302"
-                        y="58"
-                        width="174"
-                        height="128"
-                        rx="12"
-                        fill="rgba(129, 140, 248, 0.08)"
-                        stroke="currentColor"
-                        stroke-opacity="0.28"
-                        stroke-width="1.4"
-                      />
-                      <circle cx="390" cy="122" r="42" stroke="currentColor" stroke-opacity="0.2" stroke-width="1.2" />
-                      <circle cx="390" cy="122" r="26" stroke="#38BDF8" stroke-opacity="0.45" stroke-width="1.2" stroke-dasharray="3 3" />
-                      <path
-                        d="M390 80 A42 42 0 1 1 353.6 143"
-                        stroke="#38BDF8"
-                        stroke-width="3"
-                        stroke-linecap="round"
-                      />
-                      <polygon
-                        points="390,90 420,108 412,144 368,144 360,108"
-                        fill="rgba(56, 189, 248, 0.16)"
-                        stroke="#818CF8"
-                        stroke-width="1.5"
-                      />
-                      <circle cx="390" cy="122" r="3.5" fill="#F8FAFC" />
-                      <rect class="vertex-handle" x="298.5" y="54.5" width="7" height="7" rx="1.5" />
-                      <rect class="vertex-handle" x="472.5" y="182.5" width="7" height="7" rx="1.5" />
-                    </g>
-
-                    <!-- Inspectable Primitive 04: Structured Data Lattice -->
-                    <g
-                      class="inspectable-node"
-                      tabindex="0"
-                      data-node-id="TableGrid#04"
-                      data-node-spec="grid(cols=4, rows=2, bounds=[44,208,432,60]) · semantic cells preserved"
-                    >
-                      <rect
-                        x="44"
-                        y="208"
-                        width="432"
-                        height="60"
-                        rx="10"
-                        fill="currentColor"
-                        fill-opacity="0.035"
-                        stroke="currentColor"
-                        stroke-opacity="0.26"
-                        stroke-width="1.4"
-                      />
-                      <line x1="152" y1="208" x2="152" y2="268" stroke="currentColor" stroke-opacity="0.18" />
-                      <line x1="260" y1="208" x2="260" y2="268" stroke="currentColor" stroke-opacity="0.18" />
-                      <line x1="368" y1="208" x2="368" y2="268" stroke="currentColor" stroke-opacity="0.18" />
-                      <line x1="44" y1="236" x2="476" y2="236" stroke="currentColor" stroke-opacity="0.18" />
-                      <text x="60" y="226" class="svg-mono-label" fill="#38BDF8">NODE_01</text>
-                      <text x="168" y="226" class="svg-mono-label" fill="currentColor" fill-opacity="0.65">SOLVER</text>
-                      <text x="276" y="226" class="svg-mono-label" fill="currentColor" fill-opacity="0.65">FIDELITY</text>
-                      <text x="384" y="226" class="svg-mono-label" fill="currentColor" fill-opacity="0.65">STATUS</text>
-                      <text x="60" y="256" class="svg-mono-label" fill="currentColor" fill-opacity="0.9">Vector AST</text>
-                      <text x="168" y="256" class="svg-mono-label" fill="currentColor" fill-opacity="0.9">Exact</text>
-                      <text x="276" y="256" class="svg-mono-label" fill="currentColor" fill-opacity="0.9">ε &lt; 10⁻³</text>
-                      <text x="384" y="256" class="svg-mono-label" fill="#34D399">EDITABLE</text>
-                      <rect class="vertex-handle" x="40.5" y="204.5" width="7" height="7" rx="1.5" />
-                      <rect class="vertex-handle" x="472.5" y="264.5" width="7" height="7" rx="1.5" />
-                    </g>
-                  </svg>
-                </div>
-
-                <!-- CLIPPED TOP LAYER (LEFT): Blurred / Rasterized Surface Illusion -->
-                <div class="xray-layer xray-illusion" id="xray-illusion-clip" aria-hidden="true">
-                  <div class="layer-pill layer-pill-illusion">
-                    <span class="pill-dot-amber"></span>
-                    <span>SURFACE ILLUSION · LOCKED</span>
-                  </div>
-
-                  <div class="raster-pixel-grid"></div>
-
-                  <svg class="xray-svg xray-svg-degraded" viewBox="0 0 520 320" fill="none">
-                    <rect x="46" y="61" width="170" height="125" rx="10" fill="rgba(148, 163, 184, 0.16)" stroke="rgba(245, 158, 11, 0.45)" stroke-width="2.5" />
-                    <rect x="65" y="82" width="72" height="8" rx="2" fill="rgba(245, 158, 11, 0.55)" />
-                    <rect x="65" y="100" width="124" height="13" rx="2" fill="currentColor" fill-opacity="0.52" />
-                    <rect x="65" y="121" width="98" height="13" rx="2" fill="currentColor" fill-opacity="0.32" />
-                    <text x="65" y="168" class="svg-mono-label" fill="rgba(245, 158, 11, 0.8)">FLATTENED_BITMAP</text>
-
-                    <path d="M214 125 C 250 134, 268 88, 305 101" stroke="rgba(245, 158, 11, 0.55)" stroke-width="3.4" />
-                    <path d="M214 125 C 254 128, 260 170, 304 159" stroke="rgba(148, 163, 184, 0.45)" stroke-width="3" />
-
-                    <rect x="304" y="60" width="171" height="126" rx="10" fill="rgba(148, 163, 184, 0.13)" />
-                    <circle cx="391" cy="123" r="41" stroke="rgba(245, 158, 11, 0.5)" stroke-width="4" />
-                    <polygon points="391,92 418,111 409,145 370,142 363,110" fill="rgba(245, 158, 11, 0.18)" />
-
-                    <rect x="46" y="210" width="429" height="58" rx="8" fill="rgba(148, 163, 184, 0.14)" />
-                    <rect x="62" y="224" width="380" height="10" rx="2" fill="currentColor" fill-opacity="0.26" />
-                    <rect x="62" y="245" width="310" height="10" rx="2" fill="currentColor" fill-opacity="0.2" />
-                  </svg>
-                </div>
-
-                <!-- Draggable Optical Divider Handle -->
-                <div
-                  class="xray-divider"
-                  id="xray-divider"
-                  role="slider"
-                  tabindex="0"
-                  aria-label="Comparison loupe position"
-                  aria-valuemin="5"
-                  aria-valuemax="95"
-                  aria-valuenow="46"
-                >
-                  <div class="xray-divider-line"></div>
-                  <div class="xray-handle" aria-hidden="true">
-                    <span>‹</span>
-                    <span>›</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="xray-inspector" id="xray-inspector">
-                <span class="inspector-key" id="inspector-node-id">Frame#01</span>
-                <span class="inspector-sep">·</span>
-                <span class="inspector-val" id="inspector-node-spec"
-                  >rect(44, 58, 172, 128) · rx=12 · fill=linearGradient · editable=true</span
-                >
+              <div class="vision-columns">
+                <p>
+                  Too much modern software competes for human attention instead of liberating it. We start from a
+                  simpler conviction: intelligence should quietly carry the weight of repetition, physical strain, and
+                  cognitive friction.
+                </p>
+                <p>
+                  When capable agents stand beside us, a single person can create what once required an institution,
+                  families can care for health before illness takes hold, and more of every day belongs to curiosity,
+                  presence, and joy.
+                </p>
               </div>
             </div>
           </div>
@@ -500,117 +196,133 @@
       </section>
 
       <!-- =================================================================== -->
-      <!-- 02 / ARCHITECTURE: THREE PILLARS OF NEURO-SYMBOLIC CRAFT            -->
+      <!-- FOCUS: AGENTS FOR ROBOTICS, HEALTHCARE, PRODUCTIVITY                -->
       <!-- =================================================================== -->
-      <section class="section" id="architecture" aria-labelledby="arch-heading">
+      <section class="section focus-section" id="focus" aria-labelledby="focus-heading">
         <div class="container">
-          <div class="section-index-row reveal">
-            <span class="section-index">02 / ARCHITECTURE</span>
-            <span class="section-rule" aria-hidden="true"></span>
-            <span class="section-caption">How we turn frontier perception into dependable tools</span>
-          </div>
-
-          <div class="section-header-wide reveal">
-            <h2 id="arch-heading" class="section-title">
-              Judgment from intelligence.<br /><span class="serif-italic">Precision from mathematics.</span>
+          <div class="focus-header reveal">
+            <div class="section-label">FOCUS</div>
+            <h2 id="focus-heading" class="section-title">
+              Agents across <span class="serif-italic">three human horizons.</span>
             </h2>
-            <p class="section-sublead">
-              Every system we build separates what neural models do best — holistic perception, aesthetic judgment, and
-              contextual synthesis — from what formal kernels guarantee: exact geometry, structural invariants, and
-              native compatibility.
-            </p>
           </div>
 
-          <div class="pillars-grid">
-            <!-- Pillar 01 -->
-            <article class="pillar-card crystal-surface spotlight-card reveal">
-              <div class="pillar-diagram" aria-hidden="true">
-                <svg viewBox="0 0 320 148" fill="none">
-                  <rect x="18" y="20" width="116" height="108" rx="10" stroke="currentColor" stroke-opacity="0.2" />
-                  <rect x="32" y="34" width="88" height="24" rx="5" fill="#38BDF8" fill-opacity="0.14" stroke="#38BDF8" stroke-opacity="0.6" />
-                  <rect x="32" y="68" width="40" height="46" rx="5" fill="currentColor" fill-opacity="0.06" stroke="currentColor" stroke-opacity="0.28" />
-                  <rect x="80" y="68" width="40" height="46" rx="5" fill="#818CF8" fill-opacity="0.14" stroke="#818CF8" stroke-opacity="0.55" />
-                  <line class="scan-beam" x1="14" y1="52" x2="138" y2="52" stroke="#38BDF8" stroke-width="1.5" />
-                  <path d="M134 46 C 166 46, 174 38, 206 38" stroke="#38BDF8" stroke-width="1.4" stroke-dasharray="3 3" />
-                  <path d="M134 91 C 166 91, 174 74, 206 74" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.3" />
-                  <path d="M134 91 C 166 91, 174 110, 206 110" stroke="#818CF8" stroke-width="1.4" />
-                  <circle cx="206" cy="38" r="5" fill="#38BDF8" />
-                  <circle cx="206" cy="74" r="5" fill="currentColor" fill-opacity="0.6" />
-                  <circle cx="206" cy="110" r="5" fill="#818CF8" />
-                  <line x1="206" y1="38" x2="278" y2="74" stroke="#38BDF8" stroke-opacity="0.5" />
-                  <line x1="206" y1="74" x2="278" y2="74" stroke="currentColor" stroke-opacity="0.3" />
-                  <line x1="206" y1="110" x2="278" y2="74" stroke="#818CF8" stroke-opacity="0.5" />
-                  <circle cx="278" cy="74" r="7" fill="none" stroke="#38BDF8" stroke-width="1.8" />
-                  <circle cx="278" cy="74" r="2.8" fill="#F8FAFC" />
+          <div class="focus-grid">
+            <!-- 01 · Robotics -->
+            <article class="focus-card spotlight-card reveal" data-accent="indigo">
+              <div class="focus-art" aria-hidden="true">
+                <svg viewBox="0 0 280 180" fill="none">
+                  <circle cx="140" cy="90" r="62" stroke="currentColor" stroke-opacity="0.12" stroke-width="1" />
+                  <ellipse
+                    class="orbit-ring orbit-ring-a"
+                    cx="140"
+                    cy="90"
+                    rx="66"
+                    ry="26"
+                    stroke="url(#grad-robotics)"
+                    stroke-width="1.5"
+                  />
+                  <ellipse
+                    class="orbit-ring orbit-ring-b"
+                    cx="140"
+                    cy="90"
+                    rx="66"
+                    ry="26"
+                    stroke="url(#grad-robotics)"
+                    stroke-opacity="0.65"
+                    stroke-width="1.3"
+                  />
+                  <circle cx="140" cy="90" r="22" stroke="currentColor" stroke-opacity="0.2" stroke-dasharray="3 3" />
+                  <circle cx="140" cy="90" r="4.5" fill="#818CF8" />
+                  <circle class="orbit-satellite" cx="206" cy="90" r="3.2" fill="#C7D2FE" />
+                  <defs>
+                    <linearGradient id="grad-robotics" x1="74" y1="64" x2="206" y2="116" gradientUnits="userSpaceOnUse">
+                      <stop offset="0%" stop-color="#818CF8" />
+                      <stop offset="50%" stop-color="#38BDF8" />
+                      <stop offset="100%" stop-color="#818CF8" stop-opacity="0.15" />
+                    </linearGradient>
+                  </defs>
                 </svg>
               </div>
-              <div class="pillar-meta">01 · PERCEPTION</div>
-              <h3 class="pillar-title">High-dimensional visual &amp; semantic reading</h3>
-              <p class="pillar-body">
-                Reading composition, optical contrast, spatial hierarchy, and implicit domain intent as a unified whole
-                — understanding why an artifact works visually before touching a single coordinate.
+
+              <span class="focus-index">01</span>
+              <h3 class="focus-name">Agents for Robotics</h3>
+              <p class="focus-desc">
+                Embodied intelligence that perceives, adapts, and acts safely in the physical world — taking on
+                demanding labor and extending human capability beyond the screen.
               </p>
             </article>
 
-            <!-- Pillar 02 -->
-            <article class="pillar-card crystal-surface spotlight-card reveal">
-              <div class="pillar-diagram" aria-hidden="true">
-                <svg viewBox="0 0 320 148" fill="none">
-                  <g stroke="currentColor" stroke-opacity="0.12">
-                    <line x1="40" y1="22" x2="40" y2="126" />
-                    <line x1="160" y1="22" x2="160" y2="126" />
-                    <line x1="280" y1="22" x2="280" y2="126" />
-                    <line x1="24" y1="74" x2="296" y2="74" />
-                  </g>
+            <!-- 02 · Healthcare -->
+            <article class="focus-card spotlight-card reveal" data-accent="amber">
+              <div class="focus-art" aria-hidden="true">
+                <svg viewBox="0 0 280 180" fill="none">
+                  <circle class="pulse-ring pulse-ring-1" cx="140" cy="90" r="24" stroke="#F59E0B" stroke-opacity="0.45" stroke-width="1.3" />
+                  <circle class="pulse-ring pulse-ring-2" cx="140" cy="90" r="44" stroke="#FB7185" stroke-opacity="0.28" stroke-width="1.2" />
+                  <circle cx="140" cy="90" r="62" stroke="currentColor" stroke-opacity="0.1" stroke-width="1" />
+                  <path
+                    d="M64 90 H112 L124 68 L138 114 L152 76 L162 90 H216"
+                    stroke="url(#grad-health)"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <circle cx="140" cy="90" r="4" fill="#FBBF24" />
+                  <defs>
+                    <linearGradient id="grad-health" x1="64" y1="90" x2="216" y2="90" gradientUnits="userSpaceOnUse">
+                      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.1" />
+                      <stop offset="45%" stop-color="#FBBF24" />
+                      <stop offset="70%" stop-color="#FB7185" />
+                      <stop offset="100%" stop-color="#FB7185" stop-opacity="0.1" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+
+              <span class="focus-index">02</span>
+              <h3 class="focus-name">Agents for Healthcare</h3>
+              <p class="focus-desc">
+                Attentive partners for human longevity and care — synthesizing complex health signals, supporting sound
+                decisions, and protecting the vitality that lets people savor life.
+              </p>
+            </article>
+
+            <!-- 03 · Productivity -->
+            <article class="focus-card spotlight-card reveal" data-accent="cyan">
+              <div class="focus-art" aria-hidden="true">
+                <svg viewBox="0 0 280 180" fill="none">
+                  <!-- Incident curves converging through prism into crisp aligned rays -->
+                  <path d="M52 56 C 92 56, 108 84, 138 90" stroke="#38BDF8" stroke-opacity="0.45" stroke-width="1.3" />
+                  <path d="M52 90 L 138 90" stroke="#38BDF8" stroke-opacity="0.7" stroke-width="1.3" />
+                  <path d="M52 124 C 92 124, 108 96, 138 90" stroke="#818CF8" stroke-opacity="0.45" stroke-width="1.3" />
+
                   <polygon
-                    points="160,24 236,74 160,124 84,74"
-                    fill="rgba(56, 189, 248, 0.08)"
+                    class="prism-breathe"
+                    points="140,52 172,90 140,128 108,90"
+                    fill="rgba(56, 189, 248, 0.10)"
                     stroke="#38BDF8"
                     stroke-width="1.5"
                   />
-                  <circle cx="160" cy="74" r="26" stroke="#818CF8" stroke-width="1.4" stroke-dasharray="4 3" />
-                  <rect x="156.5" y="20.5" width="7" height="7" rx="1.5" fill="#38BDF8" />
-                  <rect x="232.5" y="70.5" width="7" height="7" rx="1.5" fill="#38BDF8" />
-                  <rect x="156.5" y="120.5" width="7" height="7" rx="1.5" fill="#38BDF8" />
-                  <rect x="80.5" y="70.5" width="7" height="7" rx="1.5" fill="#38BDF8" />
-                  <text x="244" y="42" class="svg-mono-label" fill="#38BDF8">ε → 0</text>
+
+                  <line x1="172" y1="90" x2="228" y2="90" stroke="url(#grad-prod)" stroke-width="2.2" stroke-linecap="round" />
+                  <line x1="164" y1="76" x2="218" y2="76" stroke="#38BDF8" stroke-opacity="0.45" stroke-width="1.2" stroke-linecap="round" />
+                  <line x1="164" y1="104" x2="218" y2="104" stroke="#38BDF8" stroke-opacity="0.45" stroke-width="1.2" stroke-linecap="round" />
+                  <circle cx="140" cy="90" r="4" fill="#F8FAFC" />
+                  <defs>
+                    <linearGradient id="grad-prod" x1="172" y1="90" x2="228" y2="90" gradientUnits="userSpaceOnUse">
+                      <stop offset="0%" stop-color="#F8FAFC" />
+                      <stop offset="60%" stop-color="#38BDF8" />
+                      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.15" />
+                    </linearGradient>
+                  </defs>
                 </svg>
               </div>
-              <div class="pillar-meta">02 · COMPILER KERNEL</div>
-              <h3 class="pillar-title">Small, template-free deterministic solvers</h3>
-              <p class="pillar-body">
-                We reject rigid slot-filling templates and brittle special-case patches. Compact mathematical kernels
-                enforce geometric alignment, optical balance, and formal constraints from first principles.
-              </p>
-            </article>
 
-            <!-- Pillar 03 -->
-            <article class="pillar-card crystal-surface spotlight-card reveal">
-              <div class="pillar-diagram" aria-hidden="true">
-                <svg viewBox="0 0 320 148" fill="none">
-                  <rect x="30" y="44" width="84" height="60" rx="10" fill="rgba(56, 189, 248, 0.11)" stroke="#38BDF8" stroke-width="1.6" />
-                  <text x="47" y="71" class="svg-mono-label" fill="currentColor">NATIVE</text>
-                  <text x="53" y="86" class="svg-mono-label" fill="#38BDF8">AST</text>
-
-                  <path d="M114 60 C 156 60, 162 34, 202 34" stroke="#38BDF8" stroke-width="1.5" />
-                  <path d="M114 74 L 202 74" stroke="currentColor" stroke-opacity="0.45" stroke-width="1.5" />
-                  <path d="M114 88 C 156 88, 162 114, 202 114" stroke="#818CF8" stroke-width="1.5" />
-
-                  <rect x="202" y="20" width="90" height="28" rx="7" stroke="currentColor" stroke-opacity="0.28" fill="currentColor" fill-opacity="0.04" />
-                  <text x="218" y="38" class="svg-mono-label" fill="currentColor" fill-opacity="0.82">HUMAN CRAFT</text>
-
-                  <rect x="202" y="60" width="90" height="28" rx="7" stroke="currentColor" stroke-opacity="0.28" fill="currentColor" fill-opacity="0.04" />
-                  <text x="218" y="78" class="svg-mono-label" fill="currentColor" fill-opacity="0.82">AGENT / API</text>
-
-                  <rect x="202" y="100" width="90" height="28" rx="7" stroke="currentColor" stroke-opacity="0.28" fill="currentColor" fill-opacity="0.04" />
-                  <text x="218" y="118" class="svg-mono-label" fill="currentColor" fill-opacity="0.82">STANDARDS</text>
-                </svg>
-              </div>
-              <div class="pillar-meta">03 · NATIVE DELIVERY</div>
-              <h3 class="pillar-title">Universal standards &amp; composable agency</h3>
-              <p class="pillar-body">
-                Great software meets users and autonomous agents inside the ecosystems they already trust — outputting
-                clean, standard-compliant structures that preserve untouched state and welcome manual craft.
+              <span class="focus-index">03</span>
+              <h3 class="focus-name">Agents for Productivity</h3>
+              <p class="focus-desc">
+                High-craft collaborators that turn intent into finished, enduring work — empowering individuals to
+                think deeper, create effortlessly, and break past personal bottlenecks.
               </p>
             </article>
           </div>
@@ -618,212 +330,31 @@
       </section>
 
       <!-- =================================================================== -->
-      <!-- 03 / THE COMPANY: WHY AN INDEPENDENT SOLO-FOUNDED COMPANY           -->
+      <!-- COMPANY: QUIET INDEPENDENT CONVICTION                               -->
       <!-- =================================================================== -->
-      <section class="section" id="company" aria-labelledby="company-heading">
+      <section class="section company-section" id="company" aria-labelledby="company-heading">
         <div class="container">
-          <div class="section-index-row reveal">
-            <span class="section-index">03 / OPERATING MODEL</span>
-            <span class="section-rule" aria-hidden="true"></span>
-            <span class="section-caption">High-density independent engineering</span>
-          </div>
-
-          <div class="company-layout">
-            <div class="company-intro reveal">
-              <h2 id="company-heading" class="section-title">
-                One company.<br /><span class="serif-italic">Undivided architecture.</span>
+          <div class="company-banner spotlight-card reveal">
+            <div class="company-copy">
+              <div class="section-label">THE COMPANY</div>
+              <h2 id="company-heading" class="company-title">
+                Independent by conviction.<br />
+                <span class="serif-italic">Crafted for the long arc.</span>
               </h2>
-              <p class="company-lead">
-                LYU.ai is an independent, founder-led software company by deliberate design. The hardest problems in
-                applied intelligence sit right at the seam between visual taste, mathematical kernels, and product
-                ergonomics — the exact seam where sprawling, committee-driven organizations fracture.
-              </p>
-              <p class="company-sub">
-                By pairing singular architectural ownership with an autonomous fleet of coding, benchmarking, and
-                verification agents, one disciplined studio can ship foundational software with institutional rigor and
-                zero organizational entropy.
-              </p>
-
-              <!-- Closed-Loop Studio Flywheel Schematic -->
-              <div class="flywheel-box crystal-surface">
-                <div class="flywheel-label">CLOSED-LOOP R&amp;D ARCHITECTURE</div>
-                <svg class="flywheel-svg" viewBox="0 0 460 132" fill="none" role="img" aria-label="Closed-loop engineering system">
-                  <rect
-                    x="18"
-                    y="26"
-                    width="424"
-                    height="80"
-                    rx="40"
-                    stroke="currentColor"
-                    stroke-opacity="0.16"
-                    stroke-width="1.2"
-                  />
-                  <rect
-                    class="photon-loop"
-                    x="18"
-                    y="26"
-                    width="424"
-                    height="80"
-                    rx="40"
-                    stroke="#38BDF8"
-                    stroke-width="1.8"
-                    stroke-dasharray="48 860"
-                  />
-
-                  <g transform="translate(34, 44)">
-                    <rect width="112" height="44" rx="10" class="flywheel-node" />
-                    <text x="56" y="19" text-anchor="middle" class="svg-mono-tiny" fill="#38BDF8">01 · DIRECTION</text>
-                    <text x="56" y="33" text-anchor="middle" class="svg-node-title" fill="currentColor">Singular Taste</text>
-                  </g>
-
-                  <g stroke="currentColor" stroke-opacity="0.38" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="150" y1="66" x2="169" y2="66" />
-                    <polyline points="165,62.5 169.5,66 165,69.5" />
-                  </g>
-
-                  <g transform="translate(174, 44)">
-                    <rect width="112" height="44" rx="10" class="flywheel-node" />
-                    <text x="56" y="19" text-anchor="middle" class="svg-mono-tiny" fill="#818CF8">02 · SYNTHESIS</text>
-                    <text x="56" y="33" text-anchor="middle" class="svg-node-title" fill="currentColor">Agentic Fleet</text>
-                  </g>
-
-                  <g stroke="currentColor" stroke-opacity="0.38" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="290" y1="66" x2="309" y2="66" />
-                    <polyline points="305,62.5 309.5,66 305,69.5" />
-                  </g>
-
-                  <g transform="translate(314, 44)">
-                    <rect width="112" height="44" rx="10" class="flywheel-node" />
-                    <text x="56" y="19" text-anchor="middle" class="svg-mono-tiny" fill="#34D399">03 · EVIDENCE</text>
-                    <text x="56" y="33" text-anchor="middle" class="svg-node-title" fill="currentColor">Truth Gates</text>
-                  </g>
-                </svg>
-              </div>
-            </div>
-
-            <div class="company-cards">
-              <article class="guarantee-card crystal-surface spotlight-card reveal">
-                <span class="guarantee-num">I</span>
-                <div>
-                  <h3>Undivided Systems Coherence</h3>
-                  <p>
-                    Perception prompts, mathematical solvers, API contracts, and interface typography are designed in a
-                    single mental loop — eliminating handoff decay and glue-code bloat.
-                  </p>
-                </div>
-              </article>
-
-              <article class="guarantee-card crystal-surface spotlight-card reveal">
-                <span class="guarantee-num">II</span>
-                <div>
-                  <h3>Agent-Multiplied Engineering Bandwidth</h3>
-                  <p>
-                    Internally orchestrated multi-agent workflows execute parallel synthesis, regression sweeps, and
-                    artifact audits around the clock under direct principal supervision.
-                  </p>
-                </div>
-              </article>
-
-              <article class="guarantee-card crystal-surface spotlight-card reveal">
-                <span class="guarantee-num">III</span>
-                <div>
-                  <h3>Ground-Truth Verification Gates</h3>
-                  <p>
-                    No change ships on intuition or demo theatrics. Every solver iteration is held to reproducible
-                    end-to-end artifact validation, explicit latency ceilings, and cost ledgers.
-                  </p>
-                </div>
-              </article>
-
-              <article class="guarantee-card crystal-surface spotlight-card reveal">
-                <span class="guarantee-num">IV</span>
-                <div>
-                  <h3>Independent, Long-Horizon Stewardship</h3>
-                  <p>
-                    Free from short-term fundraising theater or bloated overhead, we optimize strictly for product
-                    durability, sustainable unit economics, and customer trust.
-                  </p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- =================================================================== -->
-      <!-- 04 / INVARIANTS & CLOSING MONOGRAPH                                 -->
-      <!-- =================================================================== -->
-      <section class="section" id="principles" aria-labelledby="principles-heading">
-        <div class="container">
-          <div class="section-index-row reveal">
-            <span class="section-index">04 / INVARIANTS</span>
-            <span class="section-rule" aria-hidden="true"></span>
-            <span class="section-caption">Non-negotiable engineering axioms</span>
-          </div>
-
-          <div class="principles-header reveal">
-            <h2 id="principles-heading" class="section-title">
-              Rules we <span class="serif-italic">do not bend.</span>
-            </h2>
-          </div>
-
-          <div class="invariants-ledger reveal">
-            <div class="invariant-row">
-              <span class="invariant-code">AXIOM 01</span>
-              <h3 class="invariant-name">Native over simulated</h3>
-              <p class="invariant-desc">
-                Never disguise a flattened approximation as working structure. Construct real, native objects — and
-                surface honest boundaries where unsolved residuals remain.
+              <p class="company-text">
+                LYU.ai is a focused, founder-led AI product company. Unbound by committee compromise or short-term
+                noise, we unite deep product taste with autonomous agentic execution — building dependable software that
+                earns trust through quiet excellence.
               </p>
             </div>
 
-            <div class="invariant-row">
-              <span class="invariant-code">AXIOM 02</span>
-              <h3 class="invariant-name">First principles over patches</h3>
-              <p class="invariant-desc">
-                Every rule must generalize from optical physics, pixel geometry, and domain-agnostic semantics — never
-                hardcoded special cases that overfit a benchmark.
-              </p>
-            </div>
-
-            <div class="invariant-row">
-              <span class="invariant-code">AXIOM 03</span>
-              <h3 class="invariant-name">Preserve unselected human work</h3>
-              <p class="invariant-desc">
-                Scoped edits must respect locked and unselected elements without collateral mutation. Intelligence
-                assists the author; it never overwrites their craft.
-              </p>
-            </div>
-
-            <div class="invariant-row">
-              <span class="invariant-code">AXIOM 04</span>
-              <h3 class="invariant-name">Verify the whole artifact</h3>
-              <p class="invariant-desc">
-                Aggregate similarity scores can hide broken details. Acceptance requires independent, end-to-end
-                validation of the actual delivered output in its native environment.
-              </p>
-            </div>
-          </div>
-
-          <!-- Closing Monograph Banner -->
-          <div class="closing-monograph crystal-surface spotlight-card reveal">
-            <div class="closing-left">
-              <span class="mono-tag">LYU.AI · EST. 2026</span>
-              <h2 class="closing-title">
-                Small by conviction.<br /><span class="serif-italic">Rigorous by architecture.</span>
-              </h2>
-              <p class="closing-body">
-                For enterprise partnerships, engineering inquiries, or research correspondence, reach out directly.
-              </p>
-            </div>
-
-            <div class="closing-actions">
+            <div class="company-cta">
               <a href="mailto:hi@lyu.ai" class="btn-primary">
-                <span>Write to hi@lyu.ai</span>
+                <span>hi@lyu.ai</span>
                 <span aria-hidden="true">↗</span>
               </a>
-              <a href="https://github.com/lyuai" target="_blank" rel="noreferrer" class="btn-secondary">
-                <span>Explore Open Engineering</span>
+              <a href="https://github.com/lyuai" target="_blank" rel="noreferrer" class="btn-ghost">
+                <span>GitHub</span>
                 <span aria-hidden="true">↗</span>
               </a>
             </div>
@@ -832,13 +363,12 @@
       </section>
     </main>
 
-    <!-- Architectural Footer -->
     <footer class="site-footer">
       <div class="container footer-inner">
         <div class="footer-left">
           <span class="footer-brand">LYU.ai</span>
           <span class="footer-sep" aria-hidden="true">·</span>
-          <span>Independent AI Software Company. All rights reserved.</span>
+          <span>Agents for Robotics, Healthcare &amp; Productivity</span>
         </div>
 
         <div class="footer-links">
@@ -849,6 +379,6 @@
       </div>
     </footer>
 
-    <script type="module" src="main.js?v=20261112"></script>
+    <script type="module" src="main.js?v=20261112b"></script>
   </body>
 </html>

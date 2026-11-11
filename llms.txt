@@ -1,6 +1,8 @@
 # LYU.ai
 
-> Independent AI software company compiling multimodal perception into deterministic, native, human-editable craft.
+> Transcend our limits. Enjoy being alive.
+
+LYU.ai is an independent AI company building intelligent agents for robotics, healthcare, and productivity.
 
 - Website: https://lyu.ai
 - GitHub: https://github.com/lyuai
@@ -8,22 +10,10 @@
 
 ## Vision
 
-Most generative software optimizes for momentary surface spectacle — producing flattened approximations, rigid card streams, or opaque black-box outputs that break when real professional refinement begins.
+Technology reaches its highest purpose when it helps humanity outgrow its boundaries and sets people free to live. Rather than competing for human attention, our agents quietly shoulder physical strain, health complexity, and cognitive friction — returning time, vitality, and creative freedom to human life.
 
-LYU.ai builds foundational tools that close the gap between plausible previews and usable software. We pair frontier multimodal perception (holistic visual reading, aesthetic judgment, and contextual synthesis) with compact, template-free mathematical kernels that compile intent into standard-compliant, native, lossless structures.
+## Focus
 
-## Operating Model
-
-LYU.ai operates by conviction as a high-density, founder-led independent company:
-
-1. **Undivided Systems Coherence**: Perception, mathematical constraint solvers, API contracts, and user interfaces are architected in one unified mental loop without committee dilution.
-2. **Agent-Multiplied Engineering**: Autonomous multi-agent synthesis, auditing, and regression pipelines multiply engineering bandwidth under direct principal supervision.
-3. **Ground-Truth Verification**: Every iteration is gated by end-to-end artifact validation, explicit latency ceilings, and transparent cost ledgers rather than cherry-picked demos.
-4. **Long-Horizon Stewardship**: Independent economics focused on durable software and customer trust.
-
-## Engineering Invariants
-
-- **Native over simulated**: Construct true native primitives rather than disguising flattened approximations as structure.
-- **First principles over patches**: Generalize from optical physics, formal geometry, and domain-agnostic semantics.
-- **Preserve human agency**: Scoped operations respect unselected and locked state without collateral mutation.
-- **Verify the whole artifact**: Measure progress on complete, real-world end-to-end outputs.
+1. **Agents for Robotics**: Embodied intelligence that perceives, adapts, and acts safely in the physical world.
+2. **Agents for Healthcare**: Attentive partners supporting human longevity, preventive understanding, and continuous care.
+3. **Agents for Productivity**: High-craft collaborators that turn intent into enduring work and amplify individual capability.
